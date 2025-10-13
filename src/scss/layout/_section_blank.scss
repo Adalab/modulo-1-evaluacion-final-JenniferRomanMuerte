@@ -1,20 +1,52 @@
 @use "../core/variables" as var;
 
-.section__blank{
+.section__blank {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 1rem;
-  &--h3{
-    color:var.$color_green;
+  gap: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  @media (min-width: var.$media_tablet){
+      padding-inline: 17rem;
+    }
+  &--h3 {
+    color: var.$color_green;
     font-family: var.$font_roboto;
     font-weight: var.$weight_roboto_regular;
     font-size: 1.4rem;
+    @media (min-width: var.$media_tablet){
+      font-size: 1.6rem;
+    }
   }
-  &--h2{
-    color:var.$color_black;
+  &--h2 {
+    color: var.$color_black;
     font-family: var.$font_roboto_slab;
     font-weight: var.$weight_slab_bold;
     font-size: 2.2rem;
+    @media (min-width: var.$media_tablet){
+      font-size: 3.2rem;
+    }
+  }
+  &--text {
+    color: var.$color_grey;
+    font-family: var.$font_roboto;
+    font-weight: var.$weight_roboto_regular;
+    font-size: 1.8rem;
+    text-align: justify;
+    @media (min-width: var.$media_tablet){
+      text-align: left;
+    }
+  }
+  &--button {
+    width: 16rem;
+    height: 4.5rem;
+    background-color: var.$color_white;
+    color: var.$color_green;
+    font-family: var.$font_roboto;
+    font-weight: var.$weight_roboto_medium;
+    font-size: 2rem;
+    border: 2px solid var.$color_green;
+    border-radius: 22.5px;
+    margin-top: 4rem;
   }
 }
