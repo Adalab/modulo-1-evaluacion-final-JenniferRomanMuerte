@@ -1,0 +1,53 @@
+@use "../core/variables" as var;
+
+.section__hero {
+  height: 100dvh;
+  width: 100%;
+  background-image: url("../../../public/images/cover.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 85% center; // Elegimos donde nos corta la imagen (eje horizontal y eje vertical)
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding-inline: 3.4rem;
+  color: var.$color_white;
+  &--title{
+    display: flex;
+    max-width: 20ch;
+    font-family: var.$font_roboto_slab;
+    font-weight: var.$weight_slab_bold;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    @media(min-width: var.$media_tablet){
+      font-size: 7.5rem;
+     }
+  }
+  &--subtitle{
+     font-family: var.$font_roboto;
+     font-weight: var.$weight_roboto_regular;
+     font-size: 1.6rem;
+     @media(min-width: var.$media_tablet){
+      padding-inline: 18rem;
+      font-size: 2.4rem;
+     }
+
+  }
+  &--link{
+    width: 3.8rem;
+    height: 3.8rem;
+    background-image:url("../../../public/images/ico-scroll-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var.$color_white;
+    border-radius:50%;
+    padding:2rem;
+    margin-bottom: 5.8rem;
+    margin-top: 3rem;
+    @media (min-width: var.$media_tablet){
+      margin-bottom: 2rem;
+    }
+  }
+}
