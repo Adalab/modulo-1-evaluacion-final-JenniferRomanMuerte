@@ -30,6 +30,12 @@
     padding:2rem;
     top: -2rem;
     position: absolute;
+    /* llamada a la animacion, duracion, para suavizar el movimiento, para repetirla, para que se invierta y dale ese efecto de subir y bajar*/
+    animation: move 1s ease-in-out infinite alternate;
+    /*Para parar la animación cuando se pasa el ratón por encima*/
+    &:hover{
+      animation-play-state: paused;
+    }
   }
   &__links {
     display: flex;
@@ -59,4 +65,9 @@
 
 .fa-heart {
   color: var.$color_green;
+}
+
+@keyframes move {
+  from {transform: translateY(5px);}
+  to{ transform: translateY(-5px);}
 }
