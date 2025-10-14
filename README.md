@@ -37,7 +37,7 @@ La web es una landing page orientada a la venta de productos deportivos para la 
 
 Abre el archivo `index.html` en la raíz del proyecto para ver la aplicación en funcionamiento.
 
-También puedes ver la web publicada en [GitHub Pages](https://jenniferromanmuerte.github.io/modulo-1-evaluacion-final-JenniferRomanMuerte/).
+También puedes ver la web publicada en [GitHub Pages](http://beta.adalab.es/modulo-1-evaluacion-final-JenniferRomanMuerte/).
 
 ## Estructura del proyecto
 
@@ -60,4 +60,5 @@ También puedes ver la web publicada en [GitHub Pages](https://jenniferromanmuer
 
 Jennifer Roman Muerte
 [Adalab](https://adalab.es)
+
 
