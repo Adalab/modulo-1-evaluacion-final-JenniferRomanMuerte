@@ -13,10 +13,23 @@
   padding-top: 6rem;
   padding-bottom: 3.3rem;
   gap: 2.8rem;
+  position: relative;
   @media (min-width: var.$media_tablet) {
     flex-direction: row;
     align-items: flex-start;
     gap: 10rem;
+  }
+  &__link{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-image:url("../../../public/images/ico-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var.$color_white;
+    border-radius:50%;
+    padding:2rem;
+    top: -2rem;
+    position: absolute;
   }
   &__links {
     display: flex;
