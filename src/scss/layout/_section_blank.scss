@@ -1,4 +1,5 @@
 @use "../core/variables" as var;
+@use "../core/mixins" as mix;
 
 .section__blank {
   display: flex;
@@ -51,5 +52,8 @@
     text-align: center;
     padding-block: 1rem;
     padding-inline: 2rem;
+    &:hover{
+      @include mix.hover(var.$color_green, var.$color_white);
+    }
   }
 }

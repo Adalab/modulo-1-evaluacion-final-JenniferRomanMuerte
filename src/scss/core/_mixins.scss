@@ -1,0 +1,6 @@
+@mixin hover($color, $background_color){
+ background-color: $color;
+ color: $background_color;
+ transform: translateY(-10px)  scale(1.2);
+ transition-duration: 0.5s;
+}

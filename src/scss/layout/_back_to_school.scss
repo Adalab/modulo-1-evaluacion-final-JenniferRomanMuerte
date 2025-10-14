@@ -1,8 +1,10 @@
 @use "../core/variables" as var;
+@use "../core/mixins" as mix;
+
 .section__school {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem;
   background-color: var.$color_green_light;
   justify-items: center;
   padding-top: 2.7rem;
@@ -62,5 +64,8 @@
     font-family: var.$font_roboto;
     font-weight: var.$weight_roboto_medium;
     text-decoration: none;
+    &:hover{
+      @include mix.hover(var.$color_white, var.$color_green);
+    }
   }
 }
