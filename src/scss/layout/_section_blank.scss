@@ -7,7 +7,7 @@
   gap: 1rem;
   padding: 2rem;
   margin-top: 2rem;
-  @media (min-width: var.$media_tablet){
+  @media (min-width: var.$media_desktop){
       padding-inline: 17rem;
     }
   &--h3 {
