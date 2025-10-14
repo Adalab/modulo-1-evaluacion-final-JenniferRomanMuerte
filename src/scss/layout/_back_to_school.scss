@@ -1,0 +1,66 @@
+@use "../core/variables" as var;
+.section__school {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  background-color: var.$color_green_light;
+  justify-items: center;
+  padding-top: 2.7rem;
+  padding-bottom: 5rem;
+  &--h3 {
+    color: var.$color_grey_brown;
+    font-size: 1.2rem;
+    font-family: var.$font_roboto_slab;
+    font-weight: var.$weight_slab_bold;
+  }
+  &--h2 {
+    color: var.$color_black;
+    font-size: 2rem;
+    font-family: var.$font_roboto_slab;
+    font-weight: var.$weight_slab_bold;
+  }
+  &--articles {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    text-align: center;
+    @media (min-width: var.$media_tablet) {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 13rem;
+      padding-top: 2.2rem;
+      padding-bottom: 2.2rem;
+    }
+    &--article {
+      &--container {
+        width: 11.4rem;
+        height: 12.4rem;
+        &--img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+          box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      &--h3 {
+        color: var.$color_black;
+        font-size: 1.4rem;
+        font-family: var.$font_roboto_slab;
+        font-weight: var.$weight_slab_bold;
+      }
+    }
+  }
+  &--button {
+    background-color: var.$color_green;
+    color: var.$color_white;
+    padding-block: 1rem;
+    padding-inline: 2.4rem;
+    width: 18.4rem;
+    border-radius: 22.5px;
+    border: none;
+    font-size: 2rem;
+    font-family: var.$font_roboto;
+    font-weight: var.$weight_roboto_medium;
+    text-decoration: none;
+  }
+}

@@ -39,7 +39,6 @@
   }
   &--button {
     width: 16rem;
-    height: 4.5rem;
     background-color: var.$color_white;
     color: var.$color_green;
     font-family: var.$font_roboto;
@@ -48,5 +47,9 @@
     border: 2px solid var.$color_green;
     border-radius: 22.5px;
     margin-top: 4rem;
+    text-decoration: none;
+    text-align: center;
+    padding-block: 1rem;
+    padding-inline: 2rem;
   }
 }
